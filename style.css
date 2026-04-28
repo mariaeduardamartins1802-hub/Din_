@@ -1,0 +1,50 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(img/dragao3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgb(141, 141, 250);  
+     color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace ;
+    text-align: left;
+}
+
+.main{
+    width: 60%;
+    padding: 20px;
+    background-color: #c8c8c8;
+    position: relative;
+    border-radius: 20px;
+    border: 1px solid #ff0fef;
+    animation: moverEColorir 15s infinite;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+p{
+    line-height: 20px;
+    font-weight: bolder;
+}
+ @keyframes moverEColorir {
+    0% { transform: translateX(0px); background-color: rgb(255, 0, 187); }
+    50% { transform: translateX(260px); background-color: rgb(161, 0, 179); }
+    100% { transform: translateX(-250px); background-color: rgb(4, 0, 255); }
+ }
+ .caixa-texto{
+    border: 2px solid #ffffff;
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    background-color: rgb(195, 2, 220);
+    width: fit-content;
+    margin: 10px auto;
+ }
